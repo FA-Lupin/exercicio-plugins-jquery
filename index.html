@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Formulario de Cadastro</h1>
+    </header>
+    <div>
+      <form class="forms-dados">
+        <h2>Insira os Dados</h2>
+        <section class="saction-forms">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome Completo"
+          />
+          <label for="e-mail">E-mail:</label>
+          <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" />
+          <label for="tel">Telefone:</label>
+          <input
+            type="tel"
+            name="tel"
+            id="telefone"
+            placeholder="Número de Telefone"
+          />
+          <label for="cpf">CPF:</label>
+          <input type="text" name="cpf" id="cpf" placeholder="CPF" />
+          <label for="e-mail">Endereço:</label>
+          <input
+            type="text"
+            name="Endereço"
+            id="Endereço"
+            placeholder="Endereço"
+          />
+          <label for="CEP">CEP:</label>
+          <input type="text" name="cep" id="cep" placeholder="CEP" />
+          <button id="submit"><strong>Enviar</strong></button>
+        </section>
+      </form>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./js/jquery.mask.min.js"></script>
+
+    <script src="./js/jquery.validate.min.js"></script>
+
+    <script src="./js/jquery.mask.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#telefone").mask("(00)00000-0000");
+        $("#cpf").mask("000.000.000-00");
+        $("#cep").mask("00000-000");
+      });
+    </script>
+  </body>
+</html>
